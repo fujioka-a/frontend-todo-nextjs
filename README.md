@@ -21,6 +21,8 @@ $ yarn add -D prettier prettier-plugin-tailwindcss
 $ npx tailwindcss init -p
 ```
 * [Tailwind CSS Nextjs](https://tailwindcss.com/docs/guides/nextjs) 
+⇒config.jsをサイトから取得して、貼り付けする  
+
 * [Mantine UI Nextjs](https://mantine.dev/guides/next/) 
 ```bash
 # install necessary packages

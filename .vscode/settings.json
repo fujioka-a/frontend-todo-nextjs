@@ -1,0 +1,16 @@
+{
+  "editor. formatOnSave": true, // 保存時に自動でフォーマットする
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // TypeScriptに対してPrettierを適用
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint" // JSONに対してPrettierを適用
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "signin"
+  ]
+}
