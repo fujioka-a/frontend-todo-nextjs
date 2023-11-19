@@ -44,7 +44,7 @@ const Home: NextPage = () => {
           password: form.values.password,
         })
       }
-      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, {
+      await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/signin`, {
         email: form.values.email,
         password: form.values.password,
       })

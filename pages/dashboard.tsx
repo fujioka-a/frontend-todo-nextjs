@@ -10,10 +10,10 @@ import { TaskList } from '../components/TaskList'
 
 const Dashboard: NextPage = () => {
   const router = useRouter()
-  const queryClient = useQueryClient()
+  // const queryClient = useQueryClient()
   const logout = async () => {
-    queryClient.removeQueries(['tasks'])
-    queryClient.removeQueries(['user'])
+    // queryClient.removeQueries(['tasks'])
+    // queryClient.removeQueries(['user'])
     await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/auth/logout`)
     router.push('/')
   }

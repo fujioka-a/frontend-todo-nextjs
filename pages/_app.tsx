@@ -9,14 +9,14 @@ import axios from 'axios'
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      retry: false,
+      retry: false, // default 3 times for Restful API 
       refetchOnWindowFocus: false,
     },
   },
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
-  axios.defaults.withCredentials = true
+  axios.defaults.withCredentials = true // with using cookie
   useEffect(() => {
     const getCsrfToken = async () => {
       const { data } = await axios.get(
